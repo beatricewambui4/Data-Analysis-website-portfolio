@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beatrice Wambui Wakonyo | Data Analyst</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- YOUR STYLESHEET — must be in the same folder as this file -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div class="hero-bg"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Beatrice <span>W.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#skills" onclick="toggleMenu()">Skills</a>
+  <a href="#projects" onclick="toggleMenu()">Projects</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#education" onclick="toggleMenu()">Education</a>
+  <a href="#contact" onclick="toggleMenu()">Hire Me</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" style="padding:0">
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow"><span class="status-dot"></span> Open to Opportunities</div>
+      <h1 class="hero-name">Hi, I'm<strong>Beatrice Wambui Wakonyo</strong></h1>
+      <p class="hero-title"><b>Data Analyst</b> &nbsp;·&nbsp; MySQL &nbsp;·&nbsp; Power BI &nbsp;·&nbsp; Python &nbsp;·&nbsp; Excel</p>
+      <p class="hero-statement">I transform raw, complex data into clear, actionable business insights — helping organisations make smarter, faster decisions through the power of data storytelling.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View My Projects <i class="fas fa-arrow-right"></i></a>
+        <a href="beatrice-cv.pdf" class="btn btn-outline" download>Download CV <i class="fas fa-download"></i></a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip">MySQL</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Excel</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">Jupyter</span>
+        <span class="chip">DAX</span>
+        <span class="chip">Power Query</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-wrap">
+        <div class="stat-badge tl"><div class="n">2+</div><div class="l">Years Learning</div></div>
+        <img src="Professional headshot in modern office.png" alt="Beatrice Wambui Wakonyo"/>
+        <div class="stat-badge br"><div class="n"></div><div class="l">Projects Done</div></div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>Scroll</span><div class="bar"></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <div class="about-img-box">
+          <img src="Professional headshot in modern office.png" alt="Beatrice Wambui Wakonyo"/>
+        </div>
+        <div class="about-accent-line"></div>
+        <div class="about-badge"><div class="big">CS</div><div class="small">Computer Science</div></div>
+      </div>
+      <div class="about-text reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-heading">Turning Data Into<br/><strong>Decisions</strong></h2>
+        <div class="divider"></div>
+        <p>I'm a Computer Science graduate with a deep specialisation in data analysis and business intelligence. My passion lies in asking the right questions of data and finding the answers that actually matter to the business.</p>
+        <p>Through hands-on projects in SQL, Power BI, Python (Pandas), and Excel, I've developed the ability to clean messy data, build insightful dashboards, and communicate findings clearly to both technical and non-technical audiences.</p>
+        <p>I'm driven by a love of continuous learning and a belief that great data work is ultimately about helping people make better decisions — not just producing beautiful charts.</p>
+        <div class="about-pillars">
+          <div class="pillar"><i class="fas fa-brain"></i><h4>Analytical Thinking</h4><p>Breaking complex problems into clear, solvable parts</p></div>
+          <div class="pillar"><i class="fas fa-chart-line"></i><h4>Data Storytelling</h4><p>Making insights visible and compelling for any audience</p></div>
+          <div class="pillar"><i class="fas fa-search"></i><h4>Problem Solving</h4><p>Finding root causes, not just surface symptoms</p></div>
+          <div class="pillar"><i class="fas fa-graduation-cap"></i><h4>Continuous Learning</h4><p>Always growing — currently exploring predictive analytics</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="skills-intro reveal">
+      <div class="section-label">My Toolkit</div>
+      <h2 class="section-heading">Skills &amp; <strong>Expertise</strong></h2>
+      <div class="divider"></div>
+      <p style="font-size:1rem;font-weight:300;line-height:1.8;color:var(--ink-light)">A focused set of data skills built through projects, coursework, and self-directed learning.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-header"><div class="icon"><i class="fas fa-code"></i></div><h3>Technical Skills</h3></div>
+        <div class="skill-item"><div class="skill-label"><span>SQL / MySQL</span><span>90%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="--w:90%"></div></div></div>
+        <div class="skill-item"><div class="skill-label"><span>Power BI</span><span>85%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="--w:85%"></div></div></div>
+        <div class="skill-item"><div class="skill-label"><span>Excel / Power Query</span><span>92%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="--w:92%"></div></div></div>
+        <div class="skill-item"><div class="skill-label"><span>Python (Pandas)</span><span>78%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="--w:78%"></div></div></div>
+        <div class="skill-item"><div class="skill-label"><span>Data Cleaning</span><span>88%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="--w:88%"></div></div></div>
+        <div class="skill-item"><div class="skill-label"><span>Data Visualisation</span><span>85%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="--w:85%"></div></div></div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-header"><div class="icon"><i class="fas fa-tools"></i></div><h3>Tools &amp; Platforms</h3></div>
+        <div class="tools-list">
+          <span class="tool-tag">MySQL Workbench</span>
+          <span class="tool-tag">Power BI Desktop</span>
+          <span class="tool-tag">Jupyter Notebook</span>
+          <span class="tool-tag">Microsoft Excel</span>
+          <span class="tool-tag">GitHub</span>
+          <span class="tool-tag">Power Query</span>
+          <span class="tool-tag">DAX</span>
+          <span class="tool-tag">Pandas</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-header"><div class="icon"><i class="fas fa-lightbulb"></i></div><h3>Soft Skills</h3></div>
+        <div class="soft-grid">
+          <div class="soft-item"><i class="fas fa-check"></i> Analytical Thinking</div>
+          <div class="soft-item"><i class="fas fa-check"></i> Attention to Detail</div>
+          <div class="soft-item"><i class="fas fa-check"></i> Data Communication</div>
+          <div class="soft-item"><i class="fas fa-check"></i> Problem Solving</div>
+          <div class="soft-item"><i class="fas fa-check"></i> Critical Reasoning</div>
+          <div class="soft-item"><i class="fas fa-check"></i> Team Collaboration</div>
+          <div class="soft-item"><i class="fas fa-check"></i> Self-directed Learning</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- wrap each project in .proj-card + add .proj-meta for the labels -->
+<section id="projects" class="projects">
+
+  <div class="projects-wrapper">
+
+    <!-- HEADER -->
+    <div class="projects-hero">
+      <div class="projects-label">MY WORK</div>
+
+      <h2 class="projects-title">
+        Featured <br><span>Projects</span>
+      </h2>
+
+      <div class="projects-line"></div>
+
+      <p class="projects-subtext">
+        Turning data into decisions — from data preparation and analysis to 
+        building dashboards that uncover trends, patterns, and opportunities.
+      </p>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="projects-container">
+
+      <!-- PROJECT 01 -->
+      <div class="proj-card">
+        <span class="proj-badge">CASE 01</span>
+
+        <div class="proj-image">
+          <img src="Pizza Sales From Dough to Dollars.png" alt="Pizza Dashboard">
+        </div>
+
+        <div class="proj-content">
+          <h3>From Dough to Dollars — Pizza Sales Analysis</h3>
+
+          <p>
+            A complete data-driven analysis using MySQL and Power BI dashboards.
+            Explored revenue trends, order behaviour, and product performance.
+          </p>
+
+          <div class="proj-tags">
+            <span>MySQL</span>
+            <span>Power BI</span>
+            <span>DAX</span>
+            <span>SQL</span>
+          </div>
+
+          <div class="proj-links">
+            <a href="https://github.com/beatricewambui4/delicious-pizza-analytics" target="_blank">GitHub</a>
+            <a href="#">View Report</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 02 -->
+      <div class="proj-card">
+        <span class="proj-badge">CASE 02</span>
+
+        <div class="proj-image blue-bg">
+          <img src="America Sales.png" alt="Ecommerce Dashboard">
+        </div>
+
+        <div class="proj-content">
+          <h3>Ecommerce Sales Analysis — 2012 to 2014</h3>
+
+          <p>
+            A Power BI dashboard analyzing $2.3M revenue across 5,009 orders,
+            with insights into growth, profitability, and strategy.
+          </p>
+
+          <div class="proj-tags">
+            <span>Power BI</span>
+            <span>DAX</span>
+            <span>Analytics</span>
+          </div>
+
+          <div class="proj-links">
+            <a href="https://github.com/beatricewambui4" target="_blank">GitHub</a>
+            <a href="#">View Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- EXPERIENCE -->
+<section id="experience" class="experience">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Background</div>
+      <h2 class="section-heading">Experience &amp; <strong>Projects</strong></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024 — Present</div>
+        <h3 class="timeline-title">Academic Data Analysis Projects</h3>
+        <p class="timeline-org">University · Final Year</p>
+        <p class="timeline-desc">Designed and executed end-to-end data analysis projects covering the full pipeline: data collection, cleaning, analysis, visualisation, and reporting.</p>
+        <div class="timeline-tags"><span class="timeline-tag">SQL</span><span class="timeline-tag">Power BI</span><span class="timeline-tag">Python</span><span class="timeline-tag">Data Storytelling</span></div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023</div>
+        <h3 class="timeline-title">Freelance Data Cleaning &amp; Reporting</h3>
+        <p class="timeline-org">Independent · Remote</p>
+        <p class="timeline-desc">Provided data cleaning and Excel dashboard services for a small business client. Cleaned over 10,000 records and delivered a monthly performance dashboard that replaced manual weekly reporting.</p>
+        <div class="timeline-tags"><span class="timeline-tag">Excel</span><span class="timeline-tag">Power Query</span><span class="timeline-tag">Dashboards</span></div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022</div>
+        <h3 class="timeline-title">Data &amp; Analytics Volunteer</h3>
+        <p class="timeline-org">Campus Tech Community · Nairobi</p>
+        <p class="timeline-desc">Contributed data collection and analysis support for a campus health survey. Produced a summary report presented to university administration.</p>
+        <div class="timeline-tags"><span class="timeline-tag">Excel</span><span class="timeline-tag">Survey Analysis</span><span class="timeline-tag">Reporting</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="education">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Qualifications</div>
+      <h2 class="section-heading">Education &amp; <strong>Certifications</strong></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="year">2021 — 2025</div>
+        <div class="title">BSc. Computer Science</div>
+        <div class="org">University of Nairobi · Kenya</div>
+        <div class="desc">Specialisation in data systems, database management, and software engineering. Final year project focused on data analysis and business intelligence.</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+        <div class="year">2024</div>
+        <div class="title">Data Analysis with Python</div>
+        <div class="org">Coursera / IBM · Online</div>
+        <div class="desc">Covered Pandas, NumPy, data wrangling, and exploratory analysis with real-world datasets.</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-database"></i></div>
+        <div class="year">2023</div>
+        <div class="title">SQL for Data Science</div>
+        <div class="org">Udemy · Online</div>
+        <div class="desc">Advanced SQL queries, joins, subqueries, window functions, and performance optimisation for analytical workloads.</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-chart-bar"></i></div>
+        <div class="year">2024</div>
+        <div class="title">Microsoft Power BI</div>
+        <div class="org">Microsoft Learn · Online</div>
+        <div class="desc">Dashboard design, DAX calculations, data modelling, Power Query transformations, and publishing to Power BI Service.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Kind Words</div>
+      <h2 class="section-heading">What People <strong>Say</strong></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="quote-icon">"</div>
+        <p class="testi-text">Beatrice consistently demonstrated an exceptional ability to extract meaningful insights from complex datasets. Her Power BI dashboards were among the clearest I've seen from a student at this level.</p>
+        <div class="testi-author"><div class="testi-avatar">LM</div><div class="testi-author-info"><div class="name">Dr. L. Mwangi</div><div class="role">Lecturer, Computer Science</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="quote-icon">"</div>
+        <p class="testi-text">She cleaned our entire customer database and built a dashboard we actually use every week. What used to take hours now takes minutes. Highly recommend her data work.</p>
+        <div class="testi-author"><div class="testi-avatar">JK</div><div class="testi-author-info"><div class="name">James K.</div><div class="role">Small Business Client · Nairobi</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="quote-icon">"</div>
+        <p class="testi-text">Her SQL analysis of the pizza dataset uncovered patterns we had completely missed. Her attention to detail and ability to communicate findings clearly is genuinely impressive.</p>
+        <div class="testi-author"><div class="testi-avatar">AO</div><div class="testi-author-info"><div class="name">Ann O.</div><div class="role">Peer Reviewer · Data Analytics Study Group</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-heading">Let's Work <strong>Together</strong></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-tagline">I'm actively seeking data analysis tasks, entry-level analyst roles, and freelance data projects. If you have data that needs making sense of — let's talk.</p>
+        <div class="contact-open">Open to: data analysis internships, freelance work &amp; entry-level roles</div>
+        <div class="contact-links">
+          <a href="mailto:wakonyobeatrice01@gmail.com" class="contact-link">
+            <div class="c-icon"><i class="fas fa-envelope"></i></div>
+            <div><div class="c-label">Email</div><div class="c-value">wakonyobeatrice01@gmail.com</div></div>
+          </a>
+          <a href="https://www.linkedin.com/in/beatrice-wakonyo-tech/" target="_blank" class="contact-link">
+            <div class="c-icon"><i class="fab fa-linkedin"></i></div>
+            <div><div class="c-label">LinkedIn</div><div class="c-value">linkedin.com/in/beatrice-wakonyo-tech</div></div>
+          </a>
+          <a href="https://github.com/beatricewambui4" target="_blank" class="contact-link">
+            <div class="c-icon"><i class="fab fa-github"></i></div>
+            <div><div class="c-label">GitHub</div><div class="c-value">github.com/beatricewambui4</div></div>
+          </a>
+          <a href="tel:+254794212875" class="contact-link">
+            <div class="c-icon"><i class="fas fa-phone"></i></div>
+            <div><div class="c-label">Phone</div><div class="c-value">+254 794 212 875</div></div>
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group"><label>Your Name</label><input type="text" placeholder="Your full name"/></div>
+            <div class="form-group"><label>Your Email</label><input type="email" placeholder="your@email.com"/></div>
+          </div>
+          <div class="form-group"><label>Subject</label><input type="text" placeholder="Data Analysis Internship Enquiry"/></div>
+          <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Tell me about your project or opportunity..."></textarea></div>
+          <button class="btn btn-primary" onclick="alert('Sign up free at formspree.io to make this form send emails!')">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Beatrice <span>Wambui</span></div>
+  <div class="footer-copy">© 2025 Beatrice Wambui Wakonyo. All rights reserved.</div>
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/beatrice-wakonyo-tech" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/beatricewambui4" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:wakonyobeatrice01@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  function toggleMenu() {
+    document.getElementById('navMobile').classList.toggle('open');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  const barObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('animated');
+        barObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: .5 });
+  document.querySelectorAll('.skill-bar-fill').forEach(b => barObs.observe(b));
+</script>
+
+</body>
+</html>
